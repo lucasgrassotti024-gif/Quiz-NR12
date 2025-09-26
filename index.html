@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Quiz sobre Segurança do Trabalho com base na norma NR12. Desenvolvido por Lucas Grassotti Spolavori.">
+<meta name="keywords" content="Segurança do Trabalho, NR12, Segurança em Máquinas e Equipamentos, Quiz, RSS3 Soluções Industriais">
+<meta name="author" content="Lucas Grassotti Spolavori">
+<title>Quiz Segurança do Trabalho - NR12</title>
+<style>
+body {
+  font-family: Arial, sans-serif;
+  background-color: #ffffff;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+header {
+  background: linear-gradient(90deg, #0044cc, #ff6600);
+  color: white;
+  padding: 20px;
+  text-align: center;
+  border-bottom: 5px solid #0044cc;
+  position: relative;
+}
+.topo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.logo {
+  position: absolute;
+  left: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  max-width: 100px;
+  height: auto;
+}
+.title {
+  text-align: center;
+  margin: 0 auto;
+  flex-grow: 1;
+}
+.title h1 {
+  margin: 0;
+  font-size: 1.8em;
+}
+.title h3 {
+  margin: 5px 0 0 0;
+  font-size: 1em;
+  font-weight: normal;
+}
+main {
+  padding: 20px;
+  max-width: 900px;
+  margin: auto;
+}
+.intro {
+  background-color: #f2f8ff;
+  border-left: 5px solid #ff6600;
+  padding: 15px;
+  margin-bottom: 30px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+h2 {
+  color: #084eb6;
+}
+.question {
+  background-color: #fff8f2;
+  border: 2px solid #0044cc;
+  border-radius: 12px;
+  padding: 15px;
+  margin-bottom: 20px;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.08);
+}
+.options label {
+  display: block;
+  margin-bottom: 5px;
+  cursor: pointer;
+}
+button {
+  background-color:#0044cc;
+  color:white;
+  padding:10px 20px;
+  border:none;
+  border-radius:8px;
+  font-size:16px;
+  cursor:pointer;
+  display: block;
+  margin: 20px auto;
+}
+footer {
+  text-align: center;
+  background-color: #0044cc;
+  color: white;
+  padding: 15px;
+  margin-top: 30px;
+}
+footer em {
+  color: #ffcc99;
+}
+@media (max-width: 768px) {
+  header { padding: 10px; }
+  .topo { flex-direction: column; align-items: center; justify-content: center; }
+  .logo { position: static; transform: none; margin-bottom: 10px; }
+  .title { text-align: center; flex-grow: 0; }
+  .title h1 { font-size: 1.4em; }
+  .title h3 { font-size: 0.8em; }
+  main { padding: 10px; }
+  .question h3 { font-size: 1em; }
+  .options label { font-size: 0.9em; }
+}
+</style>
+</head>
+<body>
+<header>
+<div class="topo">
+  <img src="IMAGENS/logo.png" alt="RSS3 Soluções Industriais LTDA" class="logo">
+  <div class="title">
+    <h1>Quiz de Segurança do Trabalho</h1>
+    <h3>Baseado na Norma Regulamentadora NR12</h3>
+  </div>
+</div>
+</header>
+<main>
+<section class="intro">
+  <h2>Sobre este quiz</h2>
+  <p>
+    Este quiz foi desenvolvido para reforçar os conhecimentos sobre
+    segurança do trabalho com foco na Norma Regulamentadora NR12,
+    que trata da segurança no trabalho em máquinas e equipamentos.
+    O objetivo é auxiliar profissionais a compreenderem requisitos,
+    riscos e medidas de proteção, garantindo um ambiente de trabalho
+    mais seguro. Desenvolvedor: <em>Lucas Grassotti Spolavori</em>
+  </p>
+</section>
+
+<section>
+<h2>Perguntas sobre NR12</h2>
+
+<div class="question">
+  <h3>1. Qual é o objetivo principal da NR12?</h3>
+  <div class="options">
+    <label><input type="radio" name="q1" value="a"> a) Regulamentar o uso de EPIs</label>
+    <label><input type="radio" name="q1" value="b"> b) Garantir a segurança no trabalho em máquinas e equipamentos</label>
+    <label><input type="radio" name="q1" value="c"> c) Normatizar a limpeza industrial</label>
+    <label><input type="radio" name="q1" value="d"> d) Definir limites de jornada</label>
+  </div>
+</div>
+
+<div class="question">
+  <h3>2. Um dos requisitos da NR12 é:</h3>
+  <div class="options">
+    <label><input type="radio" name="q2" value="a"> a) Uso obrigatório de capacete em todas as áreas</label>
+    <label><input type="radio" name="q2" value="b"> b) Proteções mecânicas e dispositivos de segurança nas máquinas</label>
+    <label><input type="radio" name="q2" value="c"> c) Uso de EPI apenas em altura</label>
+    <label><input type="radio" name="q2" value="d"> d) Inspeção apenas anual</label>
+  </div>
+</div>
+
+<div class="question">
+  <h3>3. Quem é responsável pela implementação da NR12?</h3>
+  <div class="options">
+    <label><input type="radio" name="q3" value="a"> a) O trabalhador</label>
+    <label><input type="radio" name="q3" value="b"> b) O empregador</label>
+    <label><input type="radio" name="q3" value="c"> c) Apenas o engenheiro de segurança</label>
+    <label><input type="radio" name="q3" value="d"> d) A CIPA exclusivamente</label>
+  </div>
+</div>
+
+<div class="question">
+  <h3>4. Qual item a NR12 exige em máquinas para segurança do operador?</h3>
+  <div class="options">
+    <label><input type="radio" name="q4" value="a"> a) Proteção contra partes móveis</label>
+    <label><input type="radio" name="q4" value="b"> b) Inspeção somente anual</label>
+    <label><input type="radio" name="q4" value="c"> c) Uso de luvas descartáveis</label>
+    <label><input type="radio" name="q4" value="d"> d) Somente sinalização visual</label>
+  </div>
+</div>
+
+<div class="question">
+  <h3>5. NR12 trata principalmente de:</h3>
+  <div class="options">
+    <label><input type="radio" name="q5" value="a"> a) Ergonomia no escritório</label>
+    <label><input type="radio" name="q5" value="b"> b) Segurança em máquinas e equipamentos</label>
+    <label><input type="radio" name="q5" value="c"> c) Transporte de cargas</label>
+    <label><input type="radio" name="q5" value="d"> d) Trabalho em altura</label>
+  </div>
+</div>
+</section>
+
+<button onclick="calcularAcertos()">Enviar</button>
+</main>
+
+<script>
+function calcularAcertos() {
+  let acertos = 0;
+  const respostasCorretas = {
+    q1: "b",
+    q2: "b",
+    q3: "b",
+    q4: "a",
+    q5: "b"
+  };
+  for (let pergunta in respostasCorretas) {
+    const respostaSelecionada = document.querySelector(`input[name="${pergunta}"]:checked`);
+    if (respostaSelecionada && respostaSelecionada.value === respostasCorretas[pergunta]) {
+      acertos++;
+    }
+  }
+  window.location.href = "respostas.html?acertos=" + acertos;
+}
+</script>
+
+<footer>
+<p>© 2025 RSS3 Soluções Industriais LTDA | Desenvolvido por <em>Lucas Grassotti Spolavori</em></p>
+</footer>
+</body>
+</html>
