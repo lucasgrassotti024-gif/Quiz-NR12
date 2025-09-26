@@ -3,18 +3,11 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Quiz sobre Segurança do Trabalho com base na norma NR12. Desenvolvido por Lucas Grassotti Spolavori.">
-<meta name="keywords" content="Segurança do Trabalho, NR12, Segurança em Máquinas e Equipamentos, Quiz, RSS3 Soluções Industriais">
-<meta name="author" content="Lucas Grassotti Spolavori">
-<title>Quiz Segurança do Trabalho - NR12</title>
+<meta name="description" content="Respostas do Quiz sobre Segurança do Trabalho NR12.">
+<title>Respostas - Quiz NR12</title>
 <style>
-body {
-  font-family: Arial, sans-serif;
-  background-color: #ffffff;
-  color: #333;
-  margin: 0;
-  padding: 0;
-}
+body { font-family: Arial, sans-serif; background-color: #ffffff; color: #333; margin: 0; padding: 0; }
+
 header {
   background: linear-gradient(90deg, #0044cc, #ff6600);
   color: white;
@@ -42,15 +35,9 @@ header {
   margin: 0 auto;
   flex-grow: 1;
 }
-.title h1 {
-  margin: 0;
-  font-size: 1.8em;
-}
-.title h3 {
-  margin: 5px 0 0 0;
-  font-size: 1em;
-  font-weight: normal;
-}
+.title h1 { margin: 0; font-size: 1.8em; }
+.title h3 { margin: 5px 0 0 0; font-size: 1em; font-weight: normal; }
+
 main {
   padding: 20px;
   max-width: 900px;
@@ -64,9 +51,8 @@ main {
   border-radius: 10px;
   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
-h2 {
-  color: #084eb6;
-}
+h2 { color: #084eb6; }
+
 .question {
   background-color: #fff8f2;
   border: 2px solid #0044cc;
@@ -75,22 +61,8 @@ h2 {
   margin-bottom: 20px;
   box-shadow: 0 3px 6px rgba(0,0,0,0.08);
 }
-.options label {
-  display: block;
-  margin-bottom: 5px;
-  cursor: pointer;
-}
-button {
-  background-color:#0044cc;
-  color:white;
-  padding:10px 20px;
-  border:none;
-  border-radius:8px;
-  font-size:16px;
-  cursor:pointer;
-  display: block;
-  margin: 20px auto;
-}
+input[checked] { accent-color: #16a718; }
+
 footer {
   text-align: center;
   background-color: #0044cc;
@@ -98,9 +70,9 @@ footer {
   padding: 15px;
   margin-top: 30px;
 }
-footer em {
-  color: #ffcc99;
-}
+footer em { color: #ffcc99; }
+
+/* Responsividade */
 @media (max-width: 768px) {
   header { padding: 10px; }
   .topo { flex-direction: column; align-items: center; justify-content: center; }
@@ -111,6 +83,14 @@ footer em {
   main { padding: 10px; }
   .question h3 { font-size: 1em; }
   .options label { font-size: 0.9em; }
+  table, thead, tbody, th, td, tr { display: block; }
+  thead tr { position: absolute; top: -9999px; left: -9999px; }
+  tr { border: 1px solid #ccc; margin-bottom: 10px; }
+  td { border: none; border-bottom: 1px solid #eee; position: relative; padding-left: 50%; text-align: left; white-space: normal; }
+  td:before { position: absolute; top: 6px; left: 6px; width: 45%; padding-right: 10px; white-space: nowrap; content: attr(data-label); font-weight: bold; }
+  td:nth-of-type(1):before { content: "Respostas Corretas"; }
+  td:nth-of-type(2):before { content: "Pontuação"; }
+  td:nth-of-type(3):before { content: "Mensagem de Incentivo"; }
 }
 </style>
 </head>
@@ -119,103 +99,108 @@ footer em {
 <div class="topo">
   <img src="IMAGENS/logo.png" alt="RSS3 Soluções Industriais LTDA" class="logo">
   <div class="title">
-    <h1>Quiz de Segurança do Trabalho</h1>
-    <h3>Baseado na Norma Regulamentadora NR12</h3>
+    <h1>Respostas do Quiz</h1>
+    <h3>Segurança do Trabalho - NR12</h3>
   </div>
 </div>
 </header>
 <main>
 <section class="intro">
-  <h2>Sobre este quiz</h2>
+  <h2>Sobre estas respostas</h2>
   <p>
-    Este quiz foi desenvolvido para reforçar os conhecimentos sobre
-    segurança do trabalho com foco na Norma Regulamentadora NR12,
-    que trata da segurança no trabalho em máquinas e equipamentos.
-    O objetivo é auxiliar profissionais a compreenderem requisitos,
-    riscos e medidas de proteção, garantindo um ambiente de trabalho
-    mais seguro. Desenvolvedor: <em>Lucas Grassotti Spolavori</em>
+    Aqui estão as respostas corretas do quiz sobre a Norma Regulamentadora NR12.
+    Revise suas respostas e veja sua pontuação final no final da página.  
+    Desenvolvedor: <em>Lucas Grassotti Spolavori</em>
   </p>
 </section>
 
 <section>
-<h2>Perguntas sobre NR12</h2>
+<h2>Respostas do Quiz NR12</h2>
 
 <div class="question">
   <h3>1. Qual é o objetivo principal da NR12?</h3>
   <div class="options">
-    <label><input type="radio" name="q1" value="a"> a) Regulamentar o uso de EPIs</label>
-    <label><input type="radio" name="q1" value="b"> b) Garantir a segurança no trabalho em máquinas e equipamentos</label>
-    <label><input type="radio" name="q1" value="c"> c) Normatizar a limpeza industrial</label>
-    <label><input type="radio" name="q1" value="d"> d) Definir limites de jornada</label>
+    <label><input type="radio" name="q1" checked> b) Garantir a segurança no trabalho em máquinas e equipamentos</label>
   </div>
 </div>
 
 <div class="question">
   <h3>2. Um dos requisitos da NR12 é:</h3>
   <div class="options">
-    <label><input type="radio" name="q2" value="a"> a) Uso obrigatório de capacete em todas as áreas</label>
-    <label><input type="radio" name="q2" value="b"> b) Proteções mecânicas e dispositivos de segurança nas máquinas</label>
-    <label><input type="radio" name="q2" value="c"> c) Uso de EPI apenas em altura</label>
-    <label><input type="radio" name="q2" value="d"> d) Inspeção apenas anual</label>
+    <label><input type="radio" name="q2" checked> b) Proteções mecânicas e dispositivos de segurança nas máquinas</label>
   </div>
 </div>
 
 <div class="question">
   <h3>3. Quem é responsável pela implementação da NR12?</h3>
   <div class="options">
-    <label><input type="radio" name="q3" value="a"> a) O trabalhador</label>
-    <label><input type="radio" name="q3" value="b"> b) O empregador</label>
-    <label><input type="radio" name="q3" value="c"> c) Apenas o engenheiro de segurança</label>
-    <label><input type="radio" name="q3" value="d"> d) A CIPA exclusivamente</label>
+    <label><input type="radio" name="q3" checked> b) O empregador</label>
   </div>
 </div>
 
 <div class="question">
   <h3>4. Qual item a NR12 exige em máquinas para segurança do operador?</h3>
   <div class="options">
-    <label><input type="radio" name="q4" value="a"> a) Proteção contra partes móveis</label>
-    <label><input type="radio" name="q4" value="b"> b) Inspeção somente anual</label>
-    <label><input type="radio" name="q4" value="c"> c) Uso de luvas descartáveis</label>
-    <label><input type="radio" name="q4" value="d"> d) Somente sinalização visual</label>
+    <label><input type="radio" name="q4" checked> a) Proteção contra partes móveis</label>
   </div>
 </div>
 
 <div class="question">
   <h3>5. NR12 trata principalmente de:</h3>
   <div class="options">
-    <label><input type="radio" name="q5" value="a"> a) Ergonomia no escritório</label>
-    <label><input type="radio" name="q5" value="b"> b) Segurança em máquinas e equipamentos</label>
-    <label><input type="radio" name="q5" value="c"> c) Transporte de cargas</label>
-    <label><input type="radio" name="q5" value="d"> d) Trabalho em altura</label>
+    <label><input type="radio" name="q5" checked> b) Segurança em máquinas e equipamentos</label>
   </div>
 </div>
 </section>
 
-<button onclick="calcularAcertos()">Enviar</button>
+<section class="pontuacao">
+<h2>Seu Desempenho</h2>
+<table border="1" cellspacing="0" cellpadding="10" style="width:100%; border-collapse:collapse; text-align:center; margin-top:20px;">
+<thead style="background-color:#0044cc; color:white;">
+<tr>
+<th>Respostas Corretas</th>
+<th>Pontuação</th>
+<th>Mensagem de Incentivo</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td data-label="Respostas Corretas">0 a 1</td>
+<td data-label="Pontuação">Precisa melhorar</td>
+<td data-label="Mensagem de Incentivo">Não desanime, revise o conteúdo e tente novamente! 💪</td>
+</tr>
+<tr>
+<td data-label="Respostas Corretas">2 a 3</td>
+<td data-label="Pontuação">Regular</td>
+<td data-label="Mensagem de Incentivo">Você está no caminho, continue praticando! 🚀</td>
+</tr>
+<tr>
+<td data-label="Respostas Corretas">4</td>
+<td data-label="Pontuação">Bom</td>
+<td data-label="Mensagem de Incentivo">Bom trabalho, seu conhecimento está evoluindo! 👏</td>
+</tr>
+<tr>
+<td data-label="Respostas Corretas">5</td>
+<td data-label="Pontuação">Excelente</td>
+<td data-label="Mensagem de Incentivo">Incrível! Você dominou o conteúdo com perfeição! 🏆</td>
+</tr>
+</tbody>
+</table>
+</section>
+
+<section class="resultado">
+<h2>Resultado</h2>
+<p id="acertos" style="font-size:18px; font-weight:bold; color:#0044cc;"> Você acertou <span id="totalAcertos">0</span> questões. </p>
+</section>
 </main>
-
-<script>
-function calcularAcertos() {
-  let acertos = 0;
-  const respostasCorretas = {
-    q1: "b",
-    q2: "b",
-    q3: "b",
-    q4: "a",
-    q5: "b"
-  };
-  for (let pergunta in respostasCorretas) {
-    const respostaSelecionada = document.querySelector(`input[name="${pergunta}"]:checked`);
-    if (respostaSelecionada && respostaSelecionada.value === respostasCorretas[pergunta]) {
-      acertos++;
-    }
-  }
-  window.location.href = "respostas.html?acertos=" + acertos;
-}
-</script>
-
 <footer>
-<p>© 2025 RSS3 Soluções Industriais LTDA | Desenvolvido por <em>Lucas Grassotti Spolavori</em></p>
+<p>&copy; 2025 RSS3 Soluções Industriais LTDA | Desenvolvido por <em>Lucas Grassotti Spolavori</em></p>
 </footer>
+<script>
+// Pega parâmetro da URL (ex: respostas.html?acertos=3)
+const params = new URLSearchParams(window.location.search);
+const acertos = params.get("acertos") || 0;
+document.getElementById("totalAcertos").textContent = acertos;
+</script>
 </body>
 </html>
